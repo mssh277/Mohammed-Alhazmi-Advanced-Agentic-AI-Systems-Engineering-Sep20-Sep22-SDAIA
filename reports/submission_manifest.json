@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-09-21T10:58:08.527778+00:00",
+  "generated_at_utc": "2026-09-21T11:56:11.006084+00:00",
   "export_id": "export-d8a365f289ee0f95",
   "assessment_run_id": "run-8e6fe2f3e5a24740",
   "assessment_sha256": "dc2391bcbd10e37308cdb150e6df2033678294d7e13d1886be4394c7e0b14d7f",
@@ -114,8 +114,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "b111996f245d7ea2836e071fd93e4f35289374f683630828095e39c48a973f0c",
-      "size_bytes": 4740
+      "sha256": "6cbee319be78902e997999480235eabc029fd02593f881fa50e6fff4e993b02c",
+      "size_bytes": 5079
     },
     {
       "path": "SECURITY.md",
@@ -581,6 +581,26 @@
       "path": ".github/workflows/learner-submission-quality.yml",
       "sha256": "d0afaebcb594a38668f7b1321e91b69145b71da3f29c794562aa2e343aef428a",
       "size_bytes": 930
+    },
+    {
+      "path": "docs/SEE-RAFEEQ-IN-ACTION/01_Big_Picture.png",
+      "sha256": "ff194f249efbee62f86c68566347c5bfd74fe5b4642cdb81b4277519bf135b26",
+      "size_bytes": 212250
+    },
+    {
+      "path": "docs/SEE-RAFEEQ-IN-ACTION/02_Execution_Flow.png",
+      "sha256": "c589d0a1a2736af54b37afd9887e87ea234d3d1c26d07507c95ae49bda37c6d3",
+      "size_bytes": 433739
+    },
+    {
+      "path": "docs/SEE-RAFEEQ-IN-ACTION/03_Worked_Example.png",
+      "sha256": "1f00286c9ad5572fd3088b7d3f9fe63c5cd89b9f956ddf8d2a3b40009230cb58",
+      "size_bytes": 586527
+    },
+    {
+      "path": "docs/SEE-RAFEEQ-IN-ACTION/README.md",
+      "sha256": "a620647759c348dc35215ec2800c9328d130d05f55ae1289ddffb1555ea6b8ea",
+      "size_bytes": 6055
     }
   ],
   "safety_checks": {

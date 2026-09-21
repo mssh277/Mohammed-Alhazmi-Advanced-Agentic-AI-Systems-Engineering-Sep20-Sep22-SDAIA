@@ -6,6 +6,10 @@ Program reference: [SDAIA Academy](https://github.com/SDAIAAcademy). This is a l
 
 Rafeeq handles Arabic and English order-status and refund requests for the fictional delivery company Tawseel. It checks trusted customer ownership, retrieves active policy, delegates to a specialist and pauses refunds above 500 SAR for human approval. All identities, orders, approvals and refund writes are simulations; no real customer or payment service is connected.
 
+## See Rafeeq in Action
+
+**[Open the visual walkthrough →](docs/SEE-RAFEEQ-IN-ACTION/)** Three connected pictures with short explanations: the big picture, the execution flow, and a locally executed synthetic **740 SAR refund** followed through approval, creation and duplicate prevention. Each picture is available as a full-size PNG.
+
 ## Start here
 
 1. Read the [executed notebook](notebooks/Rafeeq_Mini_Capstone.ipynb). C9 and C20 must pass; C29 must show FINAL_EXPORT_CREATED.

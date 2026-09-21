@@ -6,11 +6,11 @@
   },
   "assessment_run_id": "run-8e6fe2f3e5a24740",
   "export_id": "export-d8a365f289ee0f95",
-  "generated_at_utc": "2026-09-21T11:00:51.536881+00:00",
+  "generated_at_utc": "2026-09-21T11:56:11.805933+00:00",
   "manifest": {
     "path": "reports/submission_manifest.json",
-    "sha256": "cd036206594d5c1e55d0576f45f1303d91362e7ce367e20d4cbecaac241f817d",
-    "size_bytes": 20040
+    "sha256": "dd6f2a63e5750fe8cf87550656c4a1808f6f005d146e96c2f675552ebc39d18e",
+    "size_bytes": 20780
   },
   "notebook": {
     "c29_marker": "FINAL_EXPORT_CREATED",
@@ -18,7 +18,7 @@
     "sha256": "85a7745b31be9f80f4c8dde42139fa0a49ce8811aef9d3f2073ca39ed48da243",
     "size_bytes": 1184796
   },
-  "receipt_id": "receipt-00274810207294b838b76cf1",
+  "receipt_id": "receipt-69c96e995310e3420ed6ebff",
   "schema_version": "1.0",
   "validation": {
     "all_passed": true,
