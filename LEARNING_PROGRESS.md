@@ -13,7 +13,7 @@
 |---|---|---|
 | Setup | IN PROGRESS | Repository and Drive notebook ready; email verification awaiting learner confirmation. |
 | Day 1 / C9_DAY1_GATE | PASS | Generated evidence retained in the saved Drive notebook. |
-| Day 2 / C20_DAY2_GATE | PENDING | Keep generated evidence in the saved Drive notebook. |
+| Day 2 / C20_DAY2_GATE | PASS | Keep generated evidence in the saved Drive notebook. |
 | Day 3 / C29_EXPORT_SAFETY_CHECK | PENDING | Upload only after FINAL_EXPORT_CREATED. |
 
 ## Safe-update rule
