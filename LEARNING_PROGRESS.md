@@ -11,7 +11,7 @@
 
 | Stage | Public status | Evidence kept safely |
 |---|---|---|
-| Setup | IN PROGRESS | Repository and Drive notebook ready; email verification awaiting learner confirmation. |
+| Setup | VERIFIED 2026-09-21 | Repository and Drive notebook ready; GitHub email settings explicitly show Verified. Email address is not published here. |
 | Day 1 / C9_DAY1_GATE | PASS | Generated evidence retained in the saved Drive notebook. |
 | Day 2 / C20_DAY2_GATE | PASS | Keep generated evidence in the saved Drive notebook. |
 | Day 3 / C29_EXPORT_SAFETY_CHECK | PASS | Clean C0–C29 run; 14/14 TODOs; 8/8 functional and 8/8 security cases; reviewed export created. |
@@ -26,4 +26,4 @@ See `reports/EVIDENCE_CARD.md`, the completed notebook, and the learner submissi
 
 ## Requirements audit — 2026-09-21
 
-Reviewed the pinned v0.9.0-rc3 rubric and administrative requirements. Added reproducible README, architecture/decision explanations, evidence index, demo rehearsal and SDAIA evidence. The setup-progress checkpoint was first recorded with Day 1; this historical deviation is disclosed without rewriting history. Email verification, personal defense, instructor review and private hand-in remain unverified.
+Reviewed the pinned v0.9.0-rc3 rubric and administrative requirements. Added reproducible README, architecture/decision explanations, evidence index, demo rehearsal and SDAIA evidence. The setup-progress checkpoint was first recorded with Day 1; this historical deviation is disclosed without rewriting history. GitHub account settings explicitly showed a verified primary email on 2026-09-21. Personal defense, instructor review and private hand-in remain unverified.
