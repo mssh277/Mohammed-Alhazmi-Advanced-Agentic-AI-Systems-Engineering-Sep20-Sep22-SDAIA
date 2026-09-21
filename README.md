@@ -1,31 +1,54 @@
 # Rafeeq Mini — Advanced Agentic AI Systems Engineering
 
-Learner: `mssh277`. Synthetic, offline capstone for the September 20–22 SDAIA program.
-Program reference: [SDAIA Academy](https://github.com/SDAIAAcademy).
+**Public learner ID:** mssh277 · **Program:** SDA-AIE-311, September 20–22, 2026  
+**البرنامج:** هندسة أنظمة الذكاء الاصطناعي التوكيلي المتقدمة  
+Program reference: [SDAIA Academy](https://github.com/SDAIAAcademy). This is a learner project; no endorsement is claimed.
 
-## What it demonstrates
-A bounded supervisor delegates to order and refund specialists using typed handoffs, scoped memory, current-policy retrieval and MCP tools. Ownership checks, approval above 500 SAR, idempotency, non-retried writes and redacted traces constrain execution. The model runs in deterministic stub mode on CPU.
+Rafeeq handles Arabic and English order-status and refund requests for the fictional delivery company Tawseel. It checks trusted customer ownership, retrieves active policy, delegates to a specialist and pauses refunds above 500 SAR for human approval. All identities, orders, approvals and refund writes are simulations; no real customer or payment service is connected.
 
-## Evidence
-- [Executed notebook](notebooks/Rafeeq_Mini_Capstone.ipynb) — C0–C29 and all 14 learner exercises.
-- [Project report](reports/PROJECT_REPORT.md), [security assessment](reports/SECURITY_ASSESSMENT.md), and [evidence cards](reports/EVIDENCE_CARD.md).
-- [Assessment results](reports/assessment_results.json), [dashboard](reports/monitoring_dashboard.png), and [export manifest](reports/submission_manifest.json).
-- [Technical learner guide](docs/learner-guide.md).
+## Start here
 
-## Reproduce
-Use Python 3.12 and set `LLM_MODE=stub`. From the repository root:
+1. Read the [executed notebook](notebooks/Rafeeq_Mini_Capstone.ipynb). C9 and C20 must pass; C29 must show FINAL_EXPORT_CREATED.
+2. For a fresh learner attempt, open the [official course portal](https://almiyead-rgb.github.io/rafeeq-agentic-ai-labs/index.html), follow its pinned Colab link and choose **File → Save a copy in Drive**. This repository contains this learner's completed submission.
+3. Select **Runtime → Change runtime type → Python 3 → CPU**. Keep LLM_MODE=stub; no API key, GPU, paid model or package installation is required for the baseline.
+4. Run C0–C29 in order, completing/reviewing each exercise. Expect C0 READY, passing C9/C20 gates and passing security/readiness checks. Follow the [notebook map](docs/EVIDENCE_INDEX.md).
+5. At C29 review the allowlist and four declarations before deliberately enabling final export. Extract the ZIP; separately save the completed notebook to notebooks/Rafeeq_Mini_Capstone.ipynb and add the three-day evidence card. Publish matching artifacts together. **Learner submission quality** must pass on the exact submitted commit.
 
-```sh
+The optional verification cell after C29 tests the extracted package if a sanitized notebook was uploaded to session storage. It explicitly skips when absent; GitHub Actions independently validates the published package.
+
+## Run and use
+
+On Linux with Python 3.12, clone or download/extract the repository, then run these commands from its root:
+
+~~~sh
+export LLM_MODE=stub
+python scripts/run_demo.py
 python -m unittest discover -s tests/public -p "test_*.py" -v
 python scripts/validate_submission.py --write-receipt
-```
+~~~
 
-To regenerate artifacts, open the notebook in Colab, run C0–C29 in order, review C29, extract its clean ZIP, and separately save the completed notebook. Upload matching artifacts together. The learner submission workflow validates the package and publishes a cryptographic receipt.
+The read-safe demo shows an English order lookup, Arabic high-value refund pause and injection refusal without refund writes. Expect RUN_DEMO=PASSED, 47 passing public tests and SUBMISSION_CHECK=PASSED. Use Colab/Linux for the course MCP stdio pipe transport; Windows is not the verified full-test platform. The [demonstration guide](docs/DEMONSTRATION_GUIDE.md) covers approval/resume and the learner attack.
 
-## Changes and limits
-Learner work includes all TODOs, bilingual MCP and memory/approval regressions, a Unicode role-spoofing local guard, and measured policy caching with result-equivalence checks. Two C27 dashboard references were corrected from `trace_redaction` to the existing `trace_redacted` gate. The C29 manifest now preserves the validator-required 14-of-14 safety flag, derived from actual learner checks. Assessment checks are retained.
+## Verified evidence
 
-All customers, orders and attacks are synthetic. Identity and approvals are simulated. The local injection rule is a teaching regression, not a production boundary. This is lab readiness, not production certification or an instructor grade. See [course use permission](COURSE_USE_PERMISSION.md).
+Assessment run: **run-8e6fe2f3e5a24740**. These are synthetic test results, not a grade or production service level.
 
-### Export compatibility
-The export includes two public comparison fixtures from the pinned course release, verified by SHA-256. Final packaging fetches them if absent; agent execution remains offline. Preflight validates completed submissions with the full submission validator; untouched teaching templates still require cleared outputs. Public tests and the learner workflow are retained. Use Colab or Linux for MCP stdio tests: the course transport uses POSIX pipe selection.
+| Evidence | Observed result |
+|---|---|
+| Learner exercises | 14/14 |
+| Functional / security cases | 8/8 / 8/8 |
+| Unauthorized writes | 0 |
+| Maximum steps / reflections | 4 / 1 |
+| Redacted trace | 187 events; valid parent links |
+| Policy cache, 500 requests | 7.825 ms before / 0.462 ms after; 499 hits / 1 miss; equal results |
+
+- [Evidence index and notebook map](docs/EVIDENCE_INDEX.md) · [architecture and decisions](docs/ENGINEERING_DECISIONS.md)
+- [Project report](reports/PROJECT_REPORT.md) · [security report](reports/SECURITY_ASSESSMENT.md) · [evidence cards](reports/EVIDENCE_CARD.md)
+- [Assessment JSON](reports/assessment_results.json) · [dashboard](reports/monitoring_dashboard.png) · [trace](reports/trace.jsonl)
+- [Manifest](reports/submission_manifest.json) · [receipt](reports/submission_receipt.json) · [SDAIA evidence](docs/SDAIA_COMPLIANCE_EVIDENCE.md) · [progress](LEARNING_PROGRESS.md)
+
+## Limits and repair provenance
+
+Identity/approvals are simulated; memory and idempotency are not durable production services. Stub tests do not measure live-model quality, provider latency or cost. The new local injection rule is a narrow regression, not comprehensive injection protection. See [production limitations](docs/ENGINEERING_DECISIONS.md#production-limitations).
+
+Official tests, validator and learner workflow are retained. Disclosed package repairs fix C27's dashboard key, preserve C29's verified 14-of-14 flag, add two hash-verified public reference fixtures, and validate completed notebooks through the full submission contract in preflight. Final packaging fetches pinned fixtures if absent; agent execution remains offline. See [repair provenance](docs/SDAIA_COMPLIANCE_EVIDENCE.md#repair-provenance) and [course use permission](COURSE_USE_PERMISSION.md).

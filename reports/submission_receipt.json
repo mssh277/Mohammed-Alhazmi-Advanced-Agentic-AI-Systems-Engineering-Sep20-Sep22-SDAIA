@@ -1,24 +1,24 @@
 {
   "assessment": {
     "path": "reports/assessment_results.json",
-    "sha256": "121f79888b5924212530bd0dafc4c16bd9a6498d1b2aa31661069ba1ddb776d2",
-    "size_bytes": 11919
+    "sha256": "dc2391bcbd10e37308cdb150e6df2033678294d7e13d1886be4394c7e0b14d7f",
+    "size_bytes": 11928
   },
-  "assessment_run_id": "run-c9f9365252144b90",
-  "export_id": "export-1b8c68a62bed48f0",
-  "generated_at_utc": "2026-09-21T08:24:03.857993+00:00",
+  "assessment_run_id": "run-8e6fe2f3e5a24740",
+  "export_id": "export-d8a365f289ee0f95",
+  "generated_at_utc": "2026-09-21T11:00:51.536881+00:00",
   "manifest": {
     "path": "reports/submission_manifest.json",
-    "sha256": "0070380e7eb492592bb2403d8e5f4c8821c266f45c66916fc3f714090e83762f",
-    "size_bytes": 19369
+    "sha256": "cd036206594d5c1e55d0576f45f1303d91362e7ce367e20d4cbecaac241f817d",
+    "size_bytes": 20040
   },
   "notebook": {
     "c29_marker": "FINAL_EXPORT_CREATED",
     "path": "notebooks/Rafeeq_Mini_Capstone.ipynb",
-    "sha256": "e448be02dcd0330e283d6942ba29d96bdb9f47c2b4bb202ea9c1cca2b4d9c4b1",
-    "size_bytes": 1174452
+    "sha256": "85a7745b31be9f80f4c8dde42139fa0a49ce8811aef9d3f2073ca39ed48da243",
+    "size_bytes": 1184796
   },
-  "receipt_id": "receipt-e9627896a5dd41b6f36d2992",
+  "receipt_id": "receipt-00274810207294b838b76cf1",
   "schema_version": "1.0",
   "validation": {
     "all_passed": true,

@@ -4,8 +4,8 @@
 - SDAIA Academy GitHub external reference | مرجع أكاديمية سدايا على GitHub: https://github.com/SDAIAAcademy
 
 ## Run and outcome | التشغيل والنتيجة
-- Assessment run ID | معرّف تشغيل التقييم: `run-c9f9365252144b90`
-- Generated UTC | وقت الإنشاء: 2026-09-21T08:13:28.699826+00:00
+- Assessment run ID | معرّف تشغيل التقييم: `run-8e6fe2f3e5a24740`
+- Generated UTC | وقت الإنشاء: 2026-09-21T10:58:07.260895+00:00
 - Decision | القرار: READY
 - Evidence cells | خلايا الأدلة: C9, C20, C23, C26, C27, C28
 
@@ -22,7 +22,7 @@
 - Security case IDs | معرّفات الحالات الأمنية: SEC-01, SEC-02, SEC-03, SEC-04, SEC-05, SEC-06, SEC-07, SEC-08
 - Functional accuracy | الدقة الوظيفية: 100%
 - Security pass rate | نسبة اجتياز الأمن: 100%
-- Median latency | وسيط الزمن: 2.826 ms
+- Median latency | وسيط الزمن: 11.627 ms
 - Trace records | سجلات التتبع: 187
 - Trace parent integrity | سلامة روابط التتبع: True
 - Runtime | بيئة التشغيل: offline deterministic stub on free CPU
@@ -39,10 +39,10 @@ Thin supervisor, OrdersAgent, RefundAgent, scoped memory, current-policy retriev
 
 ## Optimization evidence | دليل التحسين
 - Optimization | التحسين: current_policy_cache
-- Before | قبل: 5.895 ms / 500 iterations
-- After | بعد: 0.411 ms / 500 iterations
+- Before | قبل: 7.825 ms / 500 iterations
+- After | بعد: 0.462 ms / 500 iterations
 - Cache hits / misses | إصابات / إخفاقات التخزين: 499 / 1
-- Learner trade-off and guardrail | مقايضة وضابط المتدرب: 500 lookups: uncached 5.895 ms; cached 0.411 ms; 499 hits and 1 miss. Trade-off: bounded cache memory and stale-policy risk. Guardrail: key by locale, category and active policy version, invalidate on policy changes, exclude customer data; assert identical results. Timings describe this synthetic run only.
+- Learner trade-off and guardrail | مقايضة وضابط المتدرب: 500 lookups: uncached 7.825 ms; cached 0.462 ms; 499 hits and 1 miss. Trade-off: bounded cache memory and stale-policy risk. Guardrail: key by locale, category and active policy version, invalidate on policy changes, exclude customer data; assert identical results. Timings describe this synthetic run only.
 
 ## Residual risks and limitations | المخاطر المتبقية والقيود
 Synthetic public data only; no real delivery, payment or customer system; production identity, policy, secrets and operations are out of scope.

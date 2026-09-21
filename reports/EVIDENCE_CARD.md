@@ -1,7 +1,7 @@
 # Required evidence cards
 
 Public learner ID: `mssh277`  
-Assessment run: `run-c9f9365252144b90`  
+Assessment run: `run-8e6fe2f3e5a24740`  
 Final clean run date (UTC): 2026-09-21
 
 ## EV-D1 — Core and tools
@@ -34,7 +34,7 @@ Final clean run date (UTC): 2026-09-21
 - **Cell/gate:** C21–C29 / C29_EXPORT_SAFETY_CHECK.
 - **Case/metric:** L-SEC-09, SEC-01–SEC-08, EVAL-AR-01–04 and EVAL-EN-01–04.
 - **Expected:** Weak guard exposed; repaired local guard blocks the attack; 8/8 security and 8/8 functional; zero unauthorized writes; all 14 TODOs and export checks pass.
-- **Actual:** Expected results matched; 187 redacted trace events; max steps 4 and reflections 1. Cache: 5.895 ms before / 0.411 ms after for 500 lookups, 499 hits / 1 miss, identical results.
+- **Actual:** Expected results matched; 187 redacted trace events; max steps 4 and reflections 1. Cache: 7.825 ms before / 0.462 ms after for 500 lookups, 499 hits / 1 miss, identical results.
 - **Status:** PASS.
 - **Artifacts:** `reports/assessment_results.json`, `reports/SECURITY_ASSESSMENT.md`, `reports/submission_manifest.json`, and notebook C21–C29.
 - **Reproduce:** 1. Restart and run C0–C29 in order. 2. Review the export. 3. Extract matching artifacts and save notebook. 4. Run `python scripts/validate_submission.py --write-receipt`.

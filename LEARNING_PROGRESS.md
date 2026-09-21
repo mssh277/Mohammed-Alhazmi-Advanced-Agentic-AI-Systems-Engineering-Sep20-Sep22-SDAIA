@@ -23,3 +23,7 @@ Before C29, update only this progress log. Do not upload source code, the live n
 ## Final evidence
 
 See `reports/EVIDENCE_CARD.md`, the completed notebook, and the learner submission workflow. Instructor hand-in and individual explanation remain learner actions.
+
+## Requirements audit — 2026-09-21
+
+Reviewed the pinned v0.9.0-rc3 rubric and administrative requirements. Added reproducible README, architecture/decision explanations, evidence index, demo rehearsal and SDAIA evidence. The setup-progress checkpoint was first recorded with Day 1; this historical deviation is disclosed without rewriting history. Email verification, personal defense, instructor review and private hand-in remain unverified.
